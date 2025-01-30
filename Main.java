@@ -8,14 +8,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int[] arr = new int[12];
 
-        // Ввод массива
+        
         System.out.println("Введите 12 элементов массива:");
         for (int i = 0; i < 12; i++) {
             arr[i] = scanner.nextInt();
         }
         scanner.close();
 
-        // Извлекаем положительные элементы
+        
         int count = 0;
         for (int num : arr) {
             if (num > 0) count++;
@@ -40,12 +40,12 @@ public class Main {
             }
         }
 
-        // Вывод результата
+        
         System.out.println("Массив после сортировки положительных элементов:");
         System.out.println(Arrays.toString(arr));
     }
 
-    // Быстрая сортировка (QuickSort)
+    
     private static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int pivotIndex = partition(arr, low, high);
